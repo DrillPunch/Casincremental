@@ -20,10 +20,6 @@ const blackjack = () => {
   players.push(dealer);
 
   deal(deck, players);
-
-  console.log(dealer.hand);
-  console.log(player1.hand);
-  console.log(deck.cards);
 };
 
 export default blackjack;

@@ -18,5 +18,3 @@ jobs:
         run: yarn build
       - name: Run unit tests
         run: yarn test
-        env:
-          CI: true

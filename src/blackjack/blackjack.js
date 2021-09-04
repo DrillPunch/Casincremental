@@ -1,17 +1,28 @@
 function blackjack() {
-    console.clear();
-    var dealer = new player();
-    var player1 = new player()
-    var decks = new deck();
-    decks.shuffleDeck();
+    // console.clear();
+    
+    let cardSpriteSheet = "../../data/cards.png"
+    let spriteFactory = new spriteFactory(cardSpriteSheet);
+    // // let divLocation = document.getElementById("cardDiv");
+    // // let imgElement = document.createElement("img");
+    // // imgElement.src = cardSpriteSheet;
+    
+    // const dealer = new player();
+    // const player = new player();
+    // const decks = new deck();
+    // // divLocation.append(spriteFactory.getSprite("card", 100, 100));
 
-    var players = [];
-    players.push(player1);
-    players.push(dealer);
 
-    dealer.deal(decks, players);
+    // decks.shuffleDeck();
 
-    console.log(dealer.getHand());
-    console.log(player1.getHand());
-    console.log(decks.getCards());
+    // let players = [];
+    // players.push(player);
+    // players.push(dealer);
+
+    // dealer.deal(decks, players);
+
+    
+    // console.log(dealer.getHand());
+    // console.log(player.getHand());
+    // console.log(decks.getCards());
 }

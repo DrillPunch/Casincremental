@@ -30,11 +30,11 @@ export default class Card {
         this._number = number;
     }
 
-    get number() {
+    get number(): CardNumber {
         return this._number;
     }
 
-    get suit() {
+    get suit(): Suit {
         return this._suit;
     }
 }

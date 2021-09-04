@@ -4,15 +4,15 @@ import Hand from './Hand';
 export default class Player {
     _hand: Hand;
 
-    constructor () {
+    constructor() {
         this._hand = new Hand();
     }
 
-    get hand() {
+    get hand(): Hand {
         return this._hand;
     }
 
-    addToHand(card: Card) {
+    addToHand(card: Card): void {
         this._hand.add(card);
     }
 }

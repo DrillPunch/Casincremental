@@ -3,19 +3,19 @@ import Card from './Card';
 export default class Hand {
     _cards: Card[];
 
-    constructor () {
+    constructor() {
         this._cards = [];
     }
 
-    add (card: Card) {
+    add(card: Card) {
         this._cards.push(card);
     } 
 
-    clear () {
+    clear(): void {
         this._cards = [];
     }
 
-    get cards () {
+    get cards(): Card[] {
         return this._cards;
     }
 }

@@ -19,19 +19,19 @@ export default class Deck {
         }
     }
 
-    get cards () {
+    get cards(): Card[] {
         return this._cards;
     }
 
-    shuffle() {
+    shuffle(): void {
         this._cards = _.shuffle(this._cards);
     }
 
-    draw = (): any => {
+    draw(): Card | undefined {
         return this._cards.pop();
     }
     
-    emptyDeck () {
+    emptyDeck(): void {
         this._cards = [];
     }
 }

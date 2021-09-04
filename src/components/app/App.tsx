@@ -1,4 +1,4 @@
-import blackjack from './lib/games/blackjack';
+import blackjack from '../../lib/games/blackjack';
 import './App.css';
 
 const App = () => {

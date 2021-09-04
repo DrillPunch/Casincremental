@@ -19,6 +19,12 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `yarn lint`
+
+Runs code style checks. You can use `yarn test --fix` to try to automatically fix some errors.
+Some formatting errors will be automatically resolved on commit.
+You can install the VS Code plugins for Prettier and ESLint to add automatic formatting on save.
+
 ### `yarn build`
 
 Builds the app for production to the `build` folder.\

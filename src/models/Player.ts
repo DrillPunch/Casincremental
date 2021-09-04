@@ -1,5 +1,5 @@
-import Card from "./Card";
-import Hand from "./Hand";
+import Card from './Card';
+import Hand from './Hand';
 
 export default class Player {
   _hand: Hand;

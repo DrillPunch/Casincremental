@@ -1,40 +1,41 @@
 export enum Suit {
-    Hearts = 'Hearts',
-    Spades = 'Spades',
-    Clubs = 'Clubs',
-    Diamonds = 'Diamonds',
+  Hearts = 'Hearts',
+  Spades = 'Spades',
+  Clubs = 'Clubs',
+  Diamonds = 'Diamonds',
 }
 
 export enum CardNumber {
-    Two = 'Two',
-    Three = 'Three',
-    Four = 'Four',
-    Five = 'Five',
-    Six = 'Six',
-    Seven = 'Seven',
-    Eight = 'Eight',
-    Nine = 'Nine',
-    Ten = 'Ten',
-    Jack = 'Jack',
-    Queen = 'Queen',
-    King = 'King',
-    Ace = 'Ace',
+  Two = 'Two',
+  Three = 'Three',
+  Four = 'Four',
+  Five = 'Five',
+  Six = 'Six',
+  Seven = 'Seven',
+  Eight = 'Eight',
+  Nine = 'Nine',
+  Ten = 'Ten',
+  Jack = 'Jack',
+  Queen = 'Queen',
+  King = 'King',
+  Ace = 'Ace',
 }
 
 export default class Card {
-    _suit: Suit;
-    _number: CardNumber;
+  _suit: Suit;
 
-    constructor (suit: Suit, number: CardNumber) {
-        this._suit = suit;
-        this._number = number;
-    }
+  _number: CardNumber;
 
-    get number(): CardNumber {
-        return this._number;
-    }
+  constructor(suit: Suit, number: CardNumber) {
+    this._suit = suit;
+    this._number = number;
+  }
 
-    get suit(): Suit {
-        return this._suit;
-    }
+  get number(): CardNumber {
+    return this._number;
+  }
+
+  get suit(): Suit {
+    return this._suit;
+  }
 }
